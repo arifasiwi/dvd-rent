@@ -73,7 +73,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Call Of Duty");
                 namacd.add("Call Of Duty");
 
-                System.out.println("Harga CD Call Of Duty : Rp. 20.000" +pilih + menu);
+                System.out.println("Harga CD Call Of Duty : Rp. 20.000");
                 harga = harga + 20000;
 
                 System.out.println("================");
@@ -81,7 +81,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Resident Evil 6" );
                 namacd.add("Resident Evil 6");
 
-                System.out.println("Harga CD Resident Evil 6 : 25.000" +pilih + menu);
+                System.out.println("Harga CD Resident Evil 6 : 25.000");
                 harga = harga + 25000;
 
                 System.out.println("================");
@@ -89,7 +89,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Prototype 2");
                 namacd.add("Prototype 2");
 
-                System.out.println("Harga CD Prototype 2 : 30.000" +pilih + menu);
+                System.out.println("Harga CD Prototype 2 : 30.000");
                 harga = harga + 30000;
 
                 System.out.println("================");
@@ -97,7 +97,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Hero 4");
                 namacd.add("Hero 4");
 
-                System.out.println("Harga CD Hero 4 : 40.000" +pilih + menu);
+                System.out.println("Harga CD Hero 4 : 40.000");
                 harga = harga + 40000;
 
                 System.out.println("================");
@@ -105,7 +105,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Dead By Dylight");
                 namacd.add("Dead By Dylight");
 
-                System.out.println("Harga CD Dead By Dylight : 35.000" +pilih + menu);
+                System.out.println("Harga CD Dead By Dylight : 35.000");
                 harga = harga + 35000;
 
                 System.out.println("================");
@@ -128,29 +128,34 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.print("Masukkan Uang Anda : ");
                 int bayar = inputan.nextInt();
 
-                int kembali1 = bayar - tot;
+                int kembali1=0;
+                int x=1;
+                while (x!=0) {
                 if (tot > bayar) {
-                    while (tot > bayar) {
                         System.out.print("Maaf Uang Anda Kurang,Tolong Masukkan dengan benar :");
                         bayar = inputan.nextInt();
-                    }
-
-                    kembalian.add(kembali1);
-                    System.out.println(kembalian.get(0));
-                } else {
+                    
+                }else{
+                    kembali1 = bayar - tot;
                     System.out.println("Kembalian Anda = " + kembali1);
                     kembalian.add(kembali1);
+                    x=0;
                 }
+                }
+                    kembalian.add(kembali1);
+                    
+                    System.out.println(kembalian.get(0));
+                
         System.out.println("==========================================");
         System.out.println("              STRUK PEMBAYARAN            ");
         System.out.println("==========================================");
 
             System.out.println("Nama Penyewa: " + sewa);
-            System.out.println("Nama CD yang disewa: " + namacd+".");
+            System.out.println("Nama CD yang disewa: " + namacd);
             System.out.print("Tanggal pengembalian :"); 
             System.out.println(sdf.format(cal.getTime()));
-            System.out.println("Total pembayaran sebesar " +tot+".");
-            System.out.println("Kembalian Anda: " +kembalian+".");
+            System.out.println("Total pembayaran sebesar " +tot);
+            System.out.println("Kembalian Anda: " +kembali1);
             System.out.println("Terimakasih atas kunjungannya.");
             
     }
