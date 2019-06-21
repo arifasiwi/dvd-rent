@@ -30,13 +30,9 @@ public class Responsi2 { // nama kelas program untuk eksekusi
         //Memanggil kedua method getTanggal dan getWaktu untuk ditampilkan pada console
         Scanner inputan = new Scanner(System.in);
         //        inisialisasi pembayaran awal
-        int harga = 0;
-        //        inisialisasi harga cd
-       // int h1 = 20000, h2 = 25000, h3 = 30000, h4 = 40000, h5 = 35000;
-        
+        int harga = 0; 
 
         ArrayList hari = new ArrayList<>();
-        // ArrayList uang = new ArrayList<>();
         ArrayList namacd = new ArrayList<>();
         ArrayList total = new ArrayList<>();
         ArrayList kembalian = new ArrayList<>();
@@ -73,7 +69,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Call Of Duty");
                 namacd.add("Call Of Duty");
 
-                System.out.println("Harga CD Call Of Duty : Rp. 20.000");
+                System.out.println("Harga CD Call Of Duty : Rp. 20.000/Hari");
                 harga = harga + 20000;
 
                 System.out.println("================");
@@ -81,7 +77,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Resident Evil 6" );
                 namacd.add("Resident Evil 6");
 
-                System.out.println("Harga CD Resident Evil 6 : 25.000");
+                System.out.println("Harga CD Resident Evil 6 : 25.000/Hari");
                 harga = harga + 25000;
 
                 System.out.println("================");
@@ -89,7 +85,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Prototype 2");
                 namacd.add("Prototype 2");
 
-                System.out.println("Harga CD Prototype 2 : 30.000");
+                System.out.println("Harga CD Prototype 2 : 30.000/Hari");
                 harga = harga + 30000;
 
                 System.out.println("================");
@@ -97,7 +93,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Hero 4");
                 namacd.add("Hero 4");
 
-                System.out.println("Harga CD Hero 4 : 40.000");
+                System.out.println("Harga CD Hero 4 : 40.000/Hari");
                 harga = harga + 40000;
 
                 System.out.println("================");
@@ -105,7 +101,7 @@ public class Responsi2 { // nama kelas program untuk eksekusi
                 System.out.println("Nama CD yang dipinjam : Dead By Dylight");
                 namacd.add("Dead By Dylight");
 
-                System.out.println("Harga CD Dead By Dylight : 35.000");
+                System.out.println("Harga CD Dead By Dylight : 35.000/Hari");
                 harga = harga + 35000;
 
                 System.out.println("================");
